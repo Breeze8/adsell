@@ -1,0 +1,31 @@
+@import "vars"
+
+%before
+	content: ''
+	position: absolute
+
+%op 
+	opacity: 0
+	visibility: hidden
+	transition: opacity .35s ease
+
+%center 
+	transform: translate(-50%, -50%)
+	left: 50%
+	top: 50%
+
+%centerY
+	transform: translateY(-50%)
+	top: 50%
+
+%centerX
+	transform: translateX(-50%)
+	left: 50%
+
+
+@mixin media($type)
+	$breakpoints: ("lg": "(max-width: 1199px)","md": "(max-width: 1023px)","sm": "(max-width: 767px)",)
+
+	@media #{map_get($breakpoints, $type)}
+		@content
+

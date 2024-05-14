@@ -1,0 +1,38 @@
+@import "vars"
+
+
+.footer 
+	padding: 112px 0 116px 
+	margin-top: auto
+	@include media(sm)
+		padding-top: 58px
+		padding-bottom: 60px
+	&-logo 
+		margin-bottom: 38px
+		@include media(sm)
+			margin-bottom: 41px
+			img, svg 
+				max-width: 167px
+		img, svg 
+			display: block
+			margin: 0 auto
+	&-list 
+		display: flex
+		align-items: center
+		justify-content: center
+		gap: 42px
+		@include media(sm)
+			display: block
+			text-align: center
+			li 
+				margin-bottom: 16px
+				&:last-child
+					margin-bottom: 0
+		a 
+			text-transform: uppercase
+			font-size: 20px
+			border-bottom: 1px solid transparent
+			scroll-behavior: smooth 
+			&:hover 
+				border-bottom-color: $black 
+	
