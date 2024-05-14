@@ -34,17 +34,21 @@
         max-width: 800px
         margin: 0 auto
     &-content 
-        padding: 237px 15px 225px
+        padding: 45px 15px 45px
         background: linear-gradient(91.85deg, #235DFA -5.59%, #638DFF 44.64%, #93B0FF 114%)
         border-radius: 30px
         position: relative
         overflow: hidden
         z-index: 1
+        height: 90vh
+        display: flex
+        align-items: center
+        justify-content: center
         @include media(md)
-            padding: 150px 15px
+            padding: 45px 15px
         @include media(sm)
-            padding-top: 158px
-            padding-bottom: 158px
+            padding-top: 45px
+            padding-bottom: 45px
             .btn 
                 max-width: 326px
                 margin-left: auto
@@ -56,8 +60,8 @@
                 margin-bottom: 6px
             img 
                 position: absolute
-                left: -100px
-                top: -40px
+                left: -116px
+                top: -38px
                 @include media(md)
                     position: static
                     display: block
@@ -70,6 +74,9 @@
             color: $white 
             font-size: 20px
             line-height: 1.174
+            span 
+                transform: rotateY(-180deg)
+                display: inline-block
             @include media(sm)
                 font-size: 18px
                 text-align: center 
@@ -133,7 +140,7 @@
         position: relative
         left: -10px
         width: calc(100% + 25px)
-        margin: 0 -4px 26px
+        margin: 0 -4px 42px
         padding-left: 10px
         &__head 
             font-size: 11px

@@ -48,12 +48,7 @@
     function scripts() {
         return src([ 
             'app/libs/jquery/dist/jquery.min.js',
-            // 'app/libs/select2-develop/dist/js/select2.full.min.js',
-            // 'app/libs/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js',
-            // 'app/libs/aos-2/dist/aos.js',
-            // 'app/libs/clipboard.js-master/dist/clipboard.min.js',
             'app/libs/slick-carousel/slick/slick.min.js',
-            // 'app/libs/fancybox/fancybox.umd.js',
             ])
         .pipe(concat('scripts.min.js')) 
         .pipe(uglify()) 
